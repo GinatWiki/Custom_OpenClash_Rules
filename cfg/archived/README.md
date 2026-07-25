@@ -7,9 +7,10 @@
 | 文件名 | 说明 | 弃用原因 |
 | :--- | :--- | :--- |
 | `Custom_Clash_Smart.ini` | Smart 分流规则模板 | OpenClash 已更新 Smart 覆写功能，该模板已无必要 |
-| `Custom_Clash_Smart_Full.ini` | Smart 重度分流规则模板 | OpenClash 已更新 Smart 覆写功能，该模板已无必要 |
 | `Custom_Clash_Smart_GFW.ini` | Smart 精简规则模板 | OpenClash 已更新 Smart 覆写功能，该模板已无必要 |
 | `Custom_Clash_Smart_Lite.ini` | Smart 轻量规则模板 | OpenClash 已更新 Smart 覆写功能，该模板已无必要 |
+
+> 注：`Custom_Clash_Smart_Full.ini` 已移出归档，转为 `url-test` 格式后由本 fork 在 `cfg/` 目录持续维护（见 `cfg/README.md`）。
 
 ## 历史说明
 
