@@ -55,6 +55,34 @@
 
 目前只有 4 个**非 Fallback** 模板的远程链接已被 OpenClash 收录，可在内置模板列表中直接选择。4 个 Fallback 模板需要使用自定义模板地址。
 
+## 🍴 本 fork 的自定义模板（canforgive）
+
+以下 2 个模板为本 fork 自定义：规则部分跟随上游 `Custom_Clash_Full.ini`，分组部分为自定义设计。
+
+| 文件 | 定位 |
+| --- | --- |
+| [`Custom_Clash_Full_Rate.ini`](./Custom_Clash_Full_Rate.ini) | 地区 × 倍率分组（普通/0.1倍/0.01倍），适配低倍率节点命名的机场 |
+| [`Custom_Clash_Full_IEPL.ini`](./Custom_Clash_Full_IEPL.ini) | IEPL/家宽/5x 分组，适配 IEPL 专线命名的机场 |
+
+共同特点：
+
+- 所有 `select` 组的 3 个自动组置于成员列表最前，启动时默认走自动；
+- 自动/地区分组为 `url-test` 格式，在 OpenClash 中启用 Smart 覆写后，启动时会自动转换为 Smart 策略组。
+
+远程链接（需手工填写自定义模板地址）：
+
+```text
+https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_Rate.ini
+https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_IEPL.ini
+```
+
+testingcf 加速：
+
+```text
+https://testingcf.jsdelivr.net/gh/canforgive/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_Rate.ini
+https://testingcf.jsdelivr.net/gh/canforgive/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_IEPL.ini
+```
+
 ## 📊 版本区别
 
 ### 标准版 `Custom_Clash`
