@@ -15,10 +15,14 @@
 
 | 名称 | 适用内核 | 内容 |
 | :-: | :-: | :-: |
-| Custom_Clash_Smart_Full.ini | Meta | 自定义重度分组模板（IEPL/家宽/5x），自动组置顶 |
-| Custom_Clash_Smart_Full_New.ini | Meta | 自定义 Full 模板，适配 0.1倍/0.01倍/AWS/hy2 新型节点命名，自动组置顶 |
+| Custom_Clash_Full_Rate.ini | Meta | 地区 × 倍率分组（普通/0.1倍/0.01倍），适配低倍率节点命名的机场，自动组置顶 |
+| Custom_Clash_Full_IEPL.ini | Meta | IEPL/家宽/5x 分组，适配 IEPL 专线命名的机场，自动组置顶 |
 
-> 两个自定义模板原先是 Smart 内核专用模板，因转换后端（SubConverter-Extended）不支持 `smart` 组类型，已改为标准 `url-test` 分组格式；在 OpenClash 中启用 Smart 覆写后，启动时这些 `url-test` 组会自动转换为 Smart 策略组，效果与原设计一致。所有 select 组的 3 个自动组均置于成员列表最前，启动时默认走自动。
+> 两个自定义模板规则部分跟随上游 `Custom_Clash_Full.ini`，分组部分为本 fork 自定义；分组为 `url-test` 格式，在 OpenClash 中启用 Smart 覆写后，启动时会自动转换为 Smart 策略组。所有 select 组的 3 个自动组均置于成员列表最前，启动时默认走自动。
+>
+> 模板地址：
+> `https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_Rate.ini`
+> `https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_IEPL.ini`
 
 **备用下载链接：**
 
