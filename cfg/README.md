@@ -48,14 +48,14 @@ OpenClash 收录的是本仓库模板的远程地址，模板内容仍由本项�
 | 重度分流版 | [`Custom_Clash_Full.ini`](./Custom_Clash_Full.ini) | 业务、地区和节点用途分组更丰富 |
 | 重度分流 Fallback 版 | [`Custom_Clash_Full_Fallback.ini`](./Custom_Clash_Full_Fallback.ini) | 重度分流结构与自动故障转移结合 |
 
-## 🍴 本 fork 的自定义模板（canforgive）
+## 🍴 本 fork 的自定义模板（GinatWiki）
 
 以下 3 个模板为本 fork 额外提供，不在 OpenClash 内置模板列表中，需要手工填写自定义模板地址。规则部分跟随上游 `Custom_Clash_Full.ini`，分组部分为自定义设计。
 
 | 文件 | 定位 |
 | --- | --- |
 | [`Custom_Clash_Full_Rate.ini`](./Custom_Clash_Full_Rate.ini) | 地区 × 倍率分组（普通/0.1倍/0.01倍），适配低倍率节点命名的机场 |
-| [`Custom_Clash_Full_Rate_Smart.ini`](./Custom_Clash_Full_Rate_Smart.ini) | Rate 版双订阅 Smart 变体，谷歌系分组默认走第二订阅组成的谷歌智能组 |
+| [`Custom_Clash_Full_Mixed.ini`](./Custom_Clash_Full_Mixed.ini) | Rate 版双订阅 Mixed 变体，谷歌系分组默认走第二订阅组成的谷歌智能组 |
 | [`Custom_Clash_Full_IEPL.ini`](./Custom_Clash_Full_IEPL.ini) | IEPL/家宽/5x 分组，适配 IEPL 专线命名的机场 |
 
 共同特点：
@@ -66,17 +66,17 @@ OpenClash 收录的是本仓库模板的远程地址，模板内容仍由本项�
 远程链接：
 
 ```text
-https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_Rate.ini
-https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_Rate_Smart.ini
-https://raw.githubusercontent.com/canforgive/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_IEPL.ini
+https://raw.githubusercontent.com/GinatWiki/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_Rate.ini
+https://raw.githubusercontent.com/GinatWiki/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_Mixed.ini
+https://raw.githubusercontent.com/GinatWiki/Custom_OpenClash_Rules/main/cfg/Custom_Clash_Full_IEPL.ini
 ```
 
 testingcf 加速：
 
 ```text
-https://testingcf.jsdelivr.net/gh/canforgive/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_Rate.ini
-https://testingcf.jsdelivr.net/gh/canforgive/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_Rate_Smart.ini
-https://testingcf.jsdelivr.net/gh/canforgive/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_IEPL.ini
+https://testingcf.jsdelivr.net/gh/GinatWiki/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_Rate.ini
+https://testingcf.jsdelivr.net/gh/GinatWiki/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_Mixed.ini
+https://testingcf.jsdelivr.net/gh/GinatWiki/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full_IEPL.ini
 ```
 
 ## 📊 版本区别
