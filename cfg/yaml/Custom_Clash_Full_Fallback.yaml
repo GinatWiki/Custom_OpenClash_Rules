@@ -36,7 +36,7 @@ proxy-providers:
 # 策略组候选顺序、分组类型与当前 Custom_Clash_Full_Fallback.ini 保持一致；公共节点过滤在 provider1 层统一完成。
 # fallback 组显式补齐健康检查参数，按候选顺序选择首个可用项。
 proxy-groups:
-  - name: "🚀 手动选择"
+  - name: "🚀 故障转移"
     type: fallback
     proxies:
       - "🇭🇰 香港节点"
@@ -473,7 +473,7 @@ proxy-groups:
     type: fallback
     proxies:
       - "🇼🇸 台湾节点"
-      - "🚀 手动选择"
+      - "🚀 故障转移"
       - "🎯 全球直连"
     url: https://cp.cloudflare.com/generate_204
     interval: 300
@@ -506,6 +506,31 @@ proxy-groups:
     lazy: false
     expected-status: 204
   - name: "🛒 国外电商"
+    type: fallback
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇼🇸 台湾节点"
+      - "🇰🇷 韩国节点"
+      - "🇨🇦 加拿大节点"
+      - "🇬🇧 英国节点"
+      - "🇫🇷 法国节点"
+      - "🇩🇪 德国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇹🇷 土耳其节点"
+      - "🇷🇺 俄罗斯节点"
+      - "🌐 其他地区"
+      - "🏠 家宽节点"
+      - "🐢 低倍率节点"
+      - "♻️ 自动选择"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    timeout: 5000
+    lazy: false
+    expected-status: 204
+  - name: "🪙 加密货币"
     type: fallback
     proxies:
       - "🇭🇰 香港节点"
@@ -753,6 +778,28 @@ proxy-groups:
       - "🏠 家宽节点"
       - "🐢 低倍率节点"
       - "♻️ 自动选择"
+  - name: "🌍 国外域名"
+    type: select
+    proxies:
+      - "🎯 全球直连"
+      - "🚀 故障转移"
+      - "♻️ 自动选择"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇼🇸 台湾节点"
+      - "🇰🇷 韩国节点"
+      - "🇨🇦 加拿大节点"
+      - "🇬🇧 英国节点"
+      - "🇫🇷 法国节点"
+      - "🇩🇪 德国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇹🇷 土耳其节点"
+      - "🇷🇺 俄罗斯节点"
+      - "🌐 其他地区"
+      - "🏠 家宽节点"
+      - "🐢 低倍率节点"
   - name: "🐟 漏网之鱼"
     type: fallback
     proxies:
@@ -913,14 +960,9 @@ proxy-groups:
     tolerance: 50
   - name: "🎯 全球直连"
     type: url-test
+    url: http://wifi.vivo.com.cn/generate_204
     proxies:
       - DIRECT
-    url: http://wifi.vivo.com.cn/generate_204
-    interval: 300
-    tolerance: 50
-    timeout: 5000
-    lazy: false
-    expected-status: 204
 
 # ==================== 规则提供者 Rule Providers ====================
 # Domain/IP 规则优先使用 MRS；包含端口等复合规则时使用 Classical YAML。
@@ -984,8 +1026,8 @@ rules:
   - "RULE-SET,Custom_Direct_Domain,🎯 全球直连"
   - "RULE-SET,Custom_Direct_IP,🎯 全球直连,no-resolve"
   - "RULE-SET,Custom_Direct_Port,🎯 全球直连"
-  - "RULE-SET,Custom_Proxy_Domain,🚀 手动选择"
-  - "RULE-SET,Custom_Proxy_IP,🚀 手动选择,no-resolve"
+  - "RULE-SET,Custom_Proxy_Domain,🚀 故障转移"
+  - "RULE-SET,Custom_Proxy_IP,🚀 故障转移,no-resolve"
   - "GEOSITE,google-cn,🎯 全球直连"
   - "GEOSITE,category-games@cn,🎯 全球直连"
   - "RULE-SET,Steam_CDN_Domain,🎯 全球直连"
@@ -1021,12 +1063,15 @@ rules:
   - "GEOSITE,category-pt,⏬ PT站点"
   - "GEOSITE,paypal,💳 PayPal"
   - "GEOSITE,category-ecommerce,🛒 国外电商"
-  - "GEOSITE,gfw,🚀 手动选择"
+  - "GEOSITE,category-cryptocurrency,🪙 加密货币"
+  - "GEOSITE,gfw,🚀 故障转移"
   - "GEOIP,telegram,💬 即时通讯,no-resolve"
   - "GEOIP,twitter,🌐 社交媒体,no-resolve"
   - "GEOIP,facebook,🌐 社交媒体,no-resolve"
   - "GEOIP,google,🇬 谷歌服务,no-resolve"
   - "GEOIP,netflix,🎥 Netflix,no-resolve"
+  # GFW 及专用规则未命中的国外域名默认直连，可在策略组中切换代理。
+  - "GEOSITE,geolocation-!cn,🌍 国外域名"
   - "GEOSITE,cn,🎯 全球直连"
   - "GEOIP,cn,🎯 全球直连,no-resolve"
   - "RULE-SET,Nonstandard_Port_Direct,🔀 非标端口"

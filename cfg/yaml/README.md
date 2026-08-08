@@ -13,7 +13,7 @@
 > [!IMPORTANT]
 > 本目录中的正式 YAML 是 **OpenClash 专用最小配置**：主要定义节点来源、静态节点、策略组、Rule Provider 和分流规则。端口、运行模式、DNS、IPv6、TUN、嗅探、GeoData、日志及控制器等参数由 OpenClash LuCI 管理。
 >
-> 请先按 Wiki 配置插件，再选择“远程覆写模块”或“下载 YAML 手工导入”。如需订阅转换模板，请返回 [`../README.md`](../README.md)。
+> 请先按 Wiki 配置插件，再选择“远程覆写模块”或“下载 YAML 手工导入”。如需订阅转换模板，请返回 [`../`](../) 。
 
 
 ## 🧭 本项目推荐的使用流程
@@ -33,7 +33,7 @@
 | 使用路径 | 优点 | 代价与限制 | 推荐人群 |
 | --- | --- | --- | --- |
 | **① 订阅转换 + `.ini` 模板** | 操作最简单；在 OpenClash 中更新和切换订阅方便；无需手工维护 YAML | 依赖所选订阅转换后端的可用性、兼容性和隐私保障；也可以自建转换后端 | 希望省事、经常切换配置的大多数用户 |
-| **② 远程 YAML 覆写模块** | 无需订阅转换；填写模块变量即可下载对应 YAML 并写入订阅；远程文件可随仓库维护更新 | 需要学会 OpenClash 覆写模块的添加、变量填写和排障；远程更新可能改变下一次加载结果 | 希望简单使用 YAML，又不想手工编辑文件的用户 |
+| **② 远程 YAML 覆写模块** | 无需订阅转换；填写模块变量即可下载对应 YAML 并写入订阅；远程文件可随仓库维护更新 | 需要学会 OpenClash 覆写模块的添加、变量填写和排障；远程更新可能改变下一次加载结果 | 希望简单使用 YAML，想自动更新又且想手工编辑文件的用户 |
 | **③ 下载 YAML 后手工修改并导入** | 自由度最高；配置文件完全由自己控制；不依赖订阅转换后端 | 最复杂、最繁琐；需要理解 YAML、Provider、策略组和规则引用；仓库更新需自行对比迁移 | 熟悉 Mihomo YAML 的高阶用户 |
 
 > [!NOTE]
@@ -142,7 +142,7 @@
 
 ## 🌐 使用远程覆写模块
 
-不想手工下载和修改 YAML 时，可使用 [`../../overwrite/yaml/README.md`](../../overwrite/yaml/README.md) 中的远程模块：
+不想手工下载和修改 YAML 时，可使用 [`../../overwrite/yaml/`](../../overwrite/yaml/) 中的远程模块：
 
 - 8 个单独模块：固定调用对应常规 YAML；
 - 1 个 8 合 1 模块：通过 `EN_KEY2` 选择 8 个常规 YAML；
@@ -165,8 +165,8 @@
 ## 📚 相关文档
 
 - [OpenClash 设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)
-- [`cfg/` 订阅转换模板](../README.md)
-- [`overwrite/yaml/` 远程 YAML 覆写模块](../../overwrite/yaml/README.md)
+- [`cfg/` 订阅转换模板](../)
+- [`overwrite/yaml/` 远程 YAML 覆写模块](../../overwrite/yaml/)
 - [项目 Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki)
 
 ---

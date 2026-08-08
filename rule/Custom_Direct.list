@@ -315,6 +315,7 @@ DOMAIN-SUFFIX,vbkr.com
 # 机器人添加域名
 # 以下域名由用户通过机器人添加，无备案且 NS 不属于中国大陆，或解析结果不属于中国大陆，或属于 .cn/.top 域名
 
+
 # add by Telegram user: 嘿嘿 / Date: 2026-04-11 08:08:32
 DOMAIN-SUFFIX,jsj.top
 # add by Telegram user: Evan / Date: 2026-07-05 10:09:41
@@ -333,6 +334,8 @@ DOMAIN-SUFFIX,terrabbs.ink
 DOMAIN-SUFFIX,yingshi.dog
 # 中转api / add by Telegram user: 美 / Date: 2026-05-15 21:45:11
 DOMAIN-SUFFIX,code-relay.com
+# 安徽联通
+DOMAIN-SUFFIX,ahlt10010.com
 
 # =======================================
 # 以下是应当直连的冷门国内域名规则
@@ -342,6 +345,60 @@ DOMAIN-SUFFIX,code-relay.com
 # 以下是准备向 GeoSite 上游仓库提交 PR 的国内冷门域名，收录后会注释对应内容
 # ---------------------------------------
 # 以下域名待提交 PR
+# add by Rule-Bot Client / Date: 2026-08-07 19:44:20
+DOMAIN-SUFFIX,suntl.com
+# add by Telegram user: duduzhazha / Date: 2026-08-07 13:03:03
+DOMAIN-SUFFIX,senachina.com
+# add by Rule-Bot Client / Date: 2026-08-07 10:46:44
+DOMAIN-SUFFIX,sufe.me
+# add by Telegram user: Aethersailor / Date: 2026-08-07 10:38:52
+DOMAIN-SUFFIX,zzqrgs3148.vip
+# add by Rule-Bot Client / Date: 2026-08-07 08:42:20
+DOMAIN-SUFFIX,hoaihe.store
+# add by Rule-Bot Client / Date: 2026-08-06 11:48:00
+DOMAIN-SUFFIX,acgdraw.com
+# add by Rule-Bot Client / Date: 2026-08-06 08:10:01
+DOMAIN-SUFFIX,zhaiad.com
+# add by Telegram user: 美 / Date: 2026-08-06 03:17:49
+DOMAIN-SUFFIX,975135.xyz
+# add by Rule-Bot Client / Date: 2026-08-06 00:25:36
+DOMAIN-SUFFIX,0759mall.com
+# add by Telegram user: Aethersailor / Date: 2026-08-05 23:09:30
+DOMAIN-SUFFIX,8x14khzwmi.com
+# 游戏工具 / add by Telegram user: Shady / Date: 2026-08-05 15:20:53
+DOMAIN-SUFFIX,fffff.games
+# add by Telegram user: _ / Date: 2026-08-04 13:09:23
+DOMAIN-SUFFIX,dircleaner.com
+# add by Telegram user: _ / Date: 2026-08-04 13:08:14
+DOMAIN-SUFFIX,chuguansmart.com
+# 壹念视觉 / add by Telegram user: Chenyu / Date: 2026-08-04 13:05:09
+DOMAIN-SUFFIX,ynsj001.com
+# SyServer MC服务器 / add by Telegram user: 嘿嘿 / Date: 2026-08-04 10:54:09
+DOMAIN-SUFFIX,xn--zfru1ggxt.fun
+# 薄荷省钱助手 / add by Telegram user: XI / Date: 2026-08-02 21:00:56
+DOMAIN-SUFFIX,52youzai.com
+# 轻简AI智能客服 / add by Telegram user: 难离难舍屌你家姐 / Date: 2026-08-01 18:11:07
+DOMAIN-SUFFIX,qingjiansoft.com
+# 东莞市第八人民医院 / add by Telegram user: 难离难舍屌你家姐 / Date: 2026-07-31 17:28:08
+DOMAIN-SUFFIX,ba-hospital.com
+# https://github.com/Aethersailor/Custom_OpenClash_Rules/issues/383
+DOMAIN-SUFFIX,xiaomaicn.com
+# 科研测试网站 / add by Telegram user: James / Date: 2026-07-30 20:23:43
+DOMAIN-SUFFIX,eceshi.com
+# 财信证券 / add by Telegram user: along / Date: 2026-07-30 19:34:09
+DOMAIN-SUFFIX,hnchasing.com
+# sever酱微信通知 / add by Telegram user: James / Date: 2026-07-29 02:12:51
+DOMAIN-SUFFIX,ftqq.com
+# 记账软件 / add by Telegram user: James / Date: 2026-07-29 01:59:37
+DOMAIN-SUFFIX,jinzanzan.com
+# 浩捷云服务器 / add by Telegram user: Norma / Date: 2026-07-28 23:53:17
+DOMAIN-SUFFIX,haojieyun.com
+# add by Telegram user: cym / Date: 2026-07-28 16:35:37
+DOMAIN-SUFFIX,cym520.top
+# 网课 / add by Telegram user: More / Date: 2026-07-28 15:13:28
+DOMAIN-SUFFIX,zzclass.com
+# 搭练APP / add by Telegram user: Norma / Date: 2026-07-27 04:28:39
+DOMAIN-SUFFIX,nlyd.club
 # add by Telegram user: 当当 / Date: 2026-07-25 16:30:07
 DOMAIN-SUFFIX,erocraft.com
 # 专业网站 / add by Telegram user: Aaa / Date: 2026-07-25 14:51:58
@@ -1437,6 +1494,5 @@ DOMAIN-SUFFIX,sxlljm.com
 #DOMAIN-SUFFIX,winyoungreading.com
 # fnOS
 #DOMAIN-SUFFIX,5ddd.com
-
 
 # 更多已被收录的域名，此处未做保留

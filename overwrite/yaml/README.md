@@ -13,7 +13,7 @@
 > [!IMPORTANT]
 > 使用本目录模块前，先按照项目 Wiki 的 [OpenClash 设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)完成 LuCI 设置。模块负责调用远程 YAML 和写入订阅地址，不负责替你配置 DNS、IPv6、TUN、嗅探及其他插件运行参数。
 >
-> 如需了解被调用 YAML 的策略组、规则和版本区别，请先阅读 [`../../cfg/yaml/README.md`](../../cfg/yaml/README.md)。
+> 如需了解被调用 YAML 的策略组、规则和版本区别，请先阅读 [`../../cfg/yaml/`](../../cfg/yaml/)。
 
 ## 🧭 它属于三种路径中的哪一种
 
@@ -76,7 +76,7 @@
 **建议：** 自建节点作为主线路、机场作为后备，且自建节点已经整理为 HTTP Provider 或订阅 URL 时选择。
 
 > [!CAUTION]
-> 手工自建节点版 `Custom_Clash_Selfhosted_Manual_Fallback.yaml` 没有对应通用模块。其协议字段和凭据需要自行编辑，详见 [`../../cfg/yaml/README.md`](../../cfg/yaml/README.md)。
+> 手工自建节点版 `Custom_Clash_Selfhosted_Manual_Fallback.yaml` 没有对应通用模块。其协议字段和凭据需要自行编辑，详见 [`../../cfg/yaml/`](../../cfg/yaml/)。
 
 ## ⚙️ 使用方法
 
@@ -85,7 +85,7 @@
 1. 先按 Wiki 完成 OpenClash LuCI 设置并备份当前可用配置。
 2. 进入 OpenClash 的 **覆写设置 / 覆写模块** 页面。
 3. 新增远程模块，类型选择 `HTTP`。
-4. 从[全部模块订阅链接](#-全部模块订阅链接)复制模块地址。中国大陆网络通常优先使用 testingcf，GitHub Raw 可作备用。
+4. 从[全部模块订阅链接](#-全部模块订阅链接)复制模块地址。中国大陆网络通常优先使用 jsDelivr 加速链接，GitHub Raw 链接可作备用。
 5. 在模块变量或参数栏填写对应的 `EN_KEY`。
 6. 启用模块，保存并应用配置。
 7. 等待模块下载 YAML、写入 Provider 地址并重启。
@@ -150,13 +150,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 标准版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash.conf
@@ -164,13 +164,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 标准 Fallback 版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_Fallback.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_Fallback.conf
@@ -178,13 +178,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 轻量版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_Lite.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_Lite.conf
@@ -192,13 +192,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 轻量 Fallback 版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_Lite_Fallback.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_Lite_Fallback.conf
@@ -206,13 +206,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 极简 GFW 版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_GFW.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_GFW.conf
@@ -220,13 +220,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 极简 GFW Fallback 版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_GFW_Fallback.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_GFW_Fallback.conf
@@ -234,13 +234,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 重度分流版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_Full.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_Full.conf
@@ -248,13 +248,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 重度分流 Fallback 版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_Full_Fallback.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_Full_Fallback.conf
@@ -262,13 +262,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 8 合 1
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_8in1.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_8in1.conf
@@ -276,13 +276,13 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 
 ### 自建节点 Provider 优先版
 
-- GitHub Raw：
+- GitHub Raw 链接：
 
   ```text
   https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/overwrite/yaml/Custom_Clash_Selfhosted_Provider_Fallback.conf
   ```
 
-- testingcf 加速：
+- jsDelivr 加速链接：
 
   ```text
   https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@refs/heads/main/overwrite/yaml/Custom_Clash_Selfhosted_Provider_Fallback.conf
@@ -304,9 +304,9 @@ EN_KEY1=https://example.com/airport-subscription;EN_KEY2=https://example.com/sel
 ## 📚 相关文档
 
 - [OpenClash 设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)
-- [`cfg/` 订阅转换模板与三种路径](../../cfg/README.md)
-- [`cfg/yaml/` YAML 文件详解](../../cfg/yaml/README.md)
-- [`overwrite/` 其他覆写模块](../README.md)
+- [`cfg/` 订阅转换模板与三种路径](../../cfg/)
+- [`cfg/yaml/` YAML 文件详解](../../cfg/yaml/)
+- [`overwrite/` 其他覆写模块](../)
 
 ---
 
