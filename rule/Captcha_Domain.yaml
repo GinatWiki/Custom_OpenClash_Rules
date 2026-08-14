@@ -1,0 +1,16 @@
+# Generated from rule/Captcha.list
+# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Captcha.list
+# TOTAL: 10
+
+payload:
+  - '*recaptcha*'
+  - '+.arkoselabs.com'
+  - '+.challenges.cloudflare.com'
+  - '+.datadome.co'
+  - '+.friendlycaptcha.com'
+  - '+.funcaptcha.com'
+  - '+.geetest.com'
+  - '+.hcaptcha.com'
+  - '+.octocaptcha.com'
+  - '+.perimeterx.net'

@@ -13,6 +13,7 @@ on:
       - 'rule/Steam_CDN.list'
       - 'rule/Encrypted_DNS.list'
       - 'rule/Game_Download_CDN.list'
+      - 'rule/Captcha.list'
   pull_request:
     branches:
       - main

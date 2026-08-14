@@ -1,0 +1,16 @@
+# Generated from rule/Captcha.list
+# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Captcha.list
+# TOTAL: 10
+
+payload:
+  - DOMAIN-KEYWORD,recaptcha
+  - DOMAIN-SUFFIX,arkoselabs.com
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,datadome.co
+  - DOMAIN-SUFFIX,friendlycaptcha.com
+  - DOMAIN-SUFFIX,funcaptcha.com
+  - DOMAIN-SUFFIX,geetest.com
+  - DOMAIN-SUFFIX,hcaptcha.com
+  - DOMAIN-SUFFIX,octocaptcha.com
+  - DOMAIN-SUFFIX,perimeterx.net

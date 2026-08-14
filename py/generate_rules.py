@@ -19,6 +19,7 @@ BASE_NAMES = (
     "Steam_CDN",
     "Encrypted_DNS",
     "Game_Download_CDN",
+    "Captcha",
 )
 
 

@@ -1,0 +1,24 @@
+# NAME: Captcha
+# AUTHOR: GinatWiki
+# REPO: https://github.com/GinatWiki/Custom_OpenClash_Rules
+# 验证码/人机验证等风控检测服务，统一走专用策略组以固定出口、避免验证失败
+
+# Google reCAPTCHA（含 recaptcha 关键字的域名，覆盖 recaptcha.net 等镜像）
+DOMAIN-KEYWORD,recaptcha
+# hCaptcha
+DOMAIN-SUFFIX,hcaptcha.com
+# Cloudflare Turnstile / 质询页
+DOMAIN-SUFFIX,challenges.cloudflare.com
+# Arkose Labs Funcaptcha
+DOMAIN-SUFFIX,funcaptcha.com
+DOMAIN-SUFFIX,arkoselabs.com
+# GeeTest
+DOMAIN-SUFFIX,geetest.com
+# OctoCaptcha
+DOMAIN-SUFFIX,octocaptcha.com
+# Friendly Captcha
+DOMAIN-SUFFIX,friendlycaptcha.com
+# PerimeterX (HUMAN)
+DOMAIN-SUFFIX,perimeterx.net
+# DataDome
+DOMAIN-SUFFIX,datadome.co
