@@ -20,6 +20,7 @@ BASE_NAMES = (
     "Encrypted_DNS",
     "Game_Download_CDN",
     "Captcha",
+    "Google_Service",
 )
 
 

@@ -1,0 +1,15 @@
+# NAME: Google_Service
+# AUTHOR: GinatWiki
+# REPO: https://github.com/GinatWiki/Custom_OpenClash_Rules
+# 谷歌"国内可用"域名（GEOSITE google-cn 收录）实际需代理的例外清单
+# 背景：ISP DNS 对这些域名大量返回全球 IP，直连必死，DNS 在中国 CDN IP 与
+# 全球 IP 之间轮换导致症状间歇性；典型症状为 Play 商店所有应用卡在"等待中"
+# （fonts.googleapis.com / safebrowsing.googleapis.com / gvt1.com 超时）
+# 引用位置：必须置于 GEOSITE,google-cn 之前，统一走 🇬 谷歌服务
+
+# Play 商店下载管线 / FCM / Safe Browsing / 字体等（覆盖 play.googleapis.com、fonts.googleapis.com、safebrowsing.googleapis.com 等）
+DOMAIN-SUFFIX,googleapis.com
+# Play 商店与 Chrome 组件下载 CDN
+DOMAIN-SUFFIX,gvt1.com
+# 字体与静态资源（此前已被 google-cn 直连坑过，沿用同一次修复模式收编）
+DOMAIN-SUFFIX,gstatic.com

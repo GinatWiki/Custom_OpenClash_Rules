@@ -11,6 +11,7 @@ on:
       - 'rule/Encrypted_DNS.list'
       - 'rule/Game_Download_CDN.list'
       - 'rule/Captcha.list'
+      - 'rule/Google_Service.list'
       - 'py/generate_rules.py'
   workflow_dispatch:
     inputs:
