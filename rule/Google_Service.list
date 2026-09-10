@@ -13,3 +13,5 @@ DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gvt1.com
 # 字体与静态资源（此前已被 google-cn 直连坑过，沿用同一次修复模式收编）
 DOMAIN-SUFFIX,gstatic.com
+# 证书吊销检查（CRLset/OCSP，覆盖 c/ocsp/crl.pki.goog），同样被 google-cn 判直连但全球 IP 直连必超时
+DOMAIN-SUFFIX,pki.goog

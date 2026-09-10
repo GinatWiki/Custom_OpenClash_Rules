@@ -1,9 +1,10 @@
 # Generated from rule/Google_Service.list
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Google_Service.list
-# TOTAL: 3
+# TOTAL: 4
 
 payload:
   - '+.googleapis.com'
   - '+.gstatic.com'
   - '+.gvt1.com'
+  - '+.pki.goog'
