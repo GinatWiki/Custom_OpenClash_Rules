@@ -24,7 +24,8 @@
     "rule/Steam_CDN.list",
     "rule/Encrypted_DNS.list",
     "rule/Game_Download_CDN.list",
-    "rule/Captcha.list"
+    "rule/Captcha.list",
+    "rule/Google_Service.list"
   ],
   "generated_suffixes": [
     "Domain.yaml",
