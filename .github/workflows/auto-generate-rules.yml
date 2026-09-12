@@ -12,6 +12,7 @@ on:
       - 'rule/Game_Download_CDN.list'
       - 'rule/Captcha.list'
       - 'rule/Google_Service.list'
+      - 'rule/Steam_Community.list'
       - 'py/generate_rules.py'
   workflow_dispatch:
     inputs:

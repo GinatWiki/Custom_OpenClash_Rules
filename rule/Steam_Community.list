@@ -1,0 +1,32 @@
+# NAME: Steam_Community
+# AUTHOR: GinatWiki
+# REPO: https://github.com/GinatWiki/Custom_OpenClash_Rules
+# Steam 商店/社区/账号/网页域名，统一走代理
+# 本集不含任何下载 CDN 域名：下载与联机域名由 Game_Download_CDN.list 与
+# Steam_CDN.list 覆盖，那边走直连；完美世界/蒸汽平台国内域名同样走直连
+
+# Steam - 商店/社区/账号/网页（不含任何下载 CDN）
+DOMAIN-SUFFIX,steampowered.com
+DOMAIN-SUFFIX,steamcommunity.com
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steamusercontent.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,steam-api.com
+DOMAIN-SUFFIX,s.team
+DOMAIN-SUFFIX,steamdeck.com
+DOMAIN-SUFFIX,steamgames.com
+DOMAIN-SUFFIX,steam.tv
+DOMAIN-SUFFIX,valvesoftware.com
+DOMAIN-SUFFIX,valve.net
+DOMAIN-SUFFIX,dota2.com
+DOMAIN-SUFFIX,playartifact.com
+DOMAIN-SUFFIX,underlords.com
+# Steam - 社区镜像域名
+DOMAIN,steamstatic.com.8686c.com
+DOMAIN,steampowered.com.8686c.com
+# Steam - 商店/社区静态资源（Akamai，非下载）
+DOMAIN,steamstore-a.akamaihd.net
+DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN,steamuserimages-a.akamaihd.net
+DOMAIN,steamusercontent-a.akamaihd.net
+DOMAIN,steammobile.akamaized.net

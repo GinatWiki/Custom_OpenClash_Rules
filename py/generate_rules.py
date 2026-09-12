@@ -21,6 +21,7 @@ BASE_NAMES = (
     "Game_Download_CDN",
     "Captcha",
     "Google_Service",
+    "Steam_Community",
 )
 
 

@@ -1,0 +1,28 @@
+# Generated from rule/Steam_Community.list
+# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Steam_Community.list
+# TOTAL: 22
+
+payload:
+  - '+.dota2.com'
+  - '+.playartifact.com'
+  - '+.s.team'
+  - '+.steam-api.com'
+  - '+.steam-chat.com'
+  - '+.steam.tv'
+  - '+.steamcommunity.com'
+  - '+.steamdeck.com'
+  - '+.steamgames.com'
+  - '+.steampowered.com'
+  - '+.steamstatic.com'
+  - '+.steamusercontent.com'
+  - '+.underlords.com'
+  - '+.valve.net'
+  - '+.valvesoftware.com'
+  - 'steamcommunity-a.akamaihd.net'
+  - 'steammobile.akamaized.net'
+  - 'steampowered.com.8686c.com'
+  - 'steamstatic.com.8686c.com'
+  - 'steamstore-a.akamaihd.net'
+  - 'steamusercontent-a.akamaihd.net'
+  - 'steamuserimages-a.akamaihd.net'
